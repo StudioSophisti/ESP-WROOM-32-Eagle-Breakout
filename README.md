@@ -17,4 +17,5 @@ The board contains reverse-voltage protections, 2 buttons (1 for reset and 1 for
 This PCB is currently untested. I will update this repo in a few weeks when I have tested it with a real PCB.
 
 ### PCB Preview
+Generated with GerberTools from ThisIsNotRocketScience (https://github.com/ThisIsNotRocketScience/GerberTools), thanks Stijn!
 ![Preview](ESP-WROOM-32-Breakout_Top.png)
