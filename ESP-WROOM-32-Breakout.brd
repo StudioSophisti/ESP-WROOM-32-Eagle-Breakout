@@ -1352,19 +1352,24 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </library>
 <library name="Seeed-OPL-Diode">
 <packages>
-<package name="LL-34">
-<wire x1="1.6764" y1="-0.6604" x2="-1.6764" y2="-0.6604" width="0.127" layer="21"/>
-<wire x1="-1.6764" y1="-0.6604" x2="-1.6764" y2="0.6604" width="0.127" layer="21"/>
-<wire x1="-1.6764" y1="0.6604" x2="1.6764" y2="0.6604" width="0.127" layer="21"/>
-<wire x1="1.6764" y1="0.6604" x2="1.6764" y2="-0.6604" width="0.127" layer="21"/>
-<smd name="C" x="1.524" y="0" dx="1.524" dy="1.6764" layer="1" rot="R180"/>
-<smd name="A" x="-1.524" y="0" dx="1.524" dy="1.6764" layer="1" rot="R180"/>
-<text x="-1.905" y="1.27" size="0.889" layer="25" font="vector" ratio="11">&gt;NAME</text>
-<text x="-1.905" y="-2.032" size="0.889" layer="27" font="vector" ratio="11">&gt;VALUE</text>
+<package name="SOD-323">
+<description>&lt;b&gt;0805&lt;b&gt;&lt;p&gt;</description>
+<wire x1="0.85" y1="0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.14" y1="0.381" x2="-0.14" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0.381" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="-0.127" y2="-0.381" width="0.127" layer="21"/>
+<smd name="+" x="-1.2" y="0" dx="1" dy="0.8" layer="1" roundness="25"/>
+<smd name="-" x="1.2" y="0" dx="1" dy="0.8" layer="1" roundness="25"/>
+<text x="-1.905" y="0.889" size="0.889" layer="25" font="vector" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="-1.8415" size="0.889" layer="27" ratio="11">&gt;VALUE</text>
+<text x="-1.27" y="-0.635" size="0.635" layer="33" font="vector" ratio="10">&gt;NAME</text>
 <polygon width="0.127" layer="21">
-<vertex x="0.381" y="0"/>
-<vertex x="-0.254" y="-0.508"/>
-<vertex x="-0.254" y="0.508"/>
+<vertex x="-0.127" y="-0.381"/>
+<vertex x="-0.127" y="0.381"/>
+<vertex x="0.254" y="0"/>
 </polygon>
 </package>
 </packages>
@@ -1795,7 +1800,7 @@ Please send your comments to the mail address above.</description>
 <element name="SW2" library="Seeed-OPL-Switch" package="SW2-4.0-6.0X3.0X2.5MM" value="RST" x="12.192" y="13.462" smashed="yes" rot="R180">
 <attribute name="VALUE" x="13.589" y="17.272" size="1.016" layer="25" font="vector" ratio="12" rot="R180"/>
 </element>
-<element name="D1" library="Seeed-OPL-Diode" package="LL-34" value="" x="16.002" y="8.636" smashed="yes" rot="R270">
+<element name="D1" library="Seeed-OPL-Diode" package="SOD-323" value="" x="16.002" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.716" y="10.16" size="1.016" layer="25" font="vector" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="13.97" y="10.541" size="0.889" layer="27" font="vector" ratio="11" rot="R270"/>
 </element>
@@ -1928,7 +1933,7 @@ Please send your comments to the mail address above.</description>
 </signal>
 <signal name="RXD0">
 <contactref element="U3" pad="34"/>
-<contactref element="D1" pad="A"/>
+<contactref element="D1" pad="+"/>
 <wire x1="26.272" y1="32.592" x2="27.492" y2="32.592" width="0.254" layer="1"/>
 <wire x1="27.492" y1="32.592" x2="27.692" y2="32.792" width="0.254" layer="1"/>
 <via x="27.692" y="32.792" extent="1-16" drill="0.3048"/>
@@ -1941,7 +1946,7 @@ Please send your comments to the mail address above.</description>
 <wire x1="14.732" y1="17.78" x2="14.732" y2="11.938" width="0.254" layer="16"/>
 <via x="14.732" y="11.938" extent="1-16" drill="0.3048"/>
 <wire x1="14.732" y1="11.938" x2="16.256" y2="10.16" width="0.254" layer="1"/>
-<wire x1="16.256" y1="10.16" x2="16.002" y2="10.16" width="0.254" layer="1"/>
+<wire x1="16.256" y1="10.16" x2="16.002" y2="9.836" width="0.254" layer="1"/>
 </signal>
 <signal name="IO0">
 <contactref element="U3" pad="25"/>
@@ -2041,9 +2046,9 @@ Please send your comments to the mail address above.</description>
 <wire x1="32.512" y1="24.892" x2="23.368" y2="24.892" width="0.254" layer="16"/>
 </signal>
 <signal name="RX">
-<contactref element="D1" pad="C"/>
+<contactref element="D1" pad="-"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="16.002" y1="2.032" x2="16.002" y2="7.112" width="0.254" layer="1"/>
+<wire x1="16.002" y1="2.032" x2="16.002" y2="7.436" width="0.254" layer="1"/>
 </signal>
 <signal name="IO34">
 <contactref element="U3" pad="6"/>

@@ -8406,7 +8406,7 @@ TrenchMOS technology.
 <part name="V2" library="supply" deviceset="VCC" device=""/>
 <part name="SW1" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S" value="PROG"/>
 <part name="SW2" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S" value="RST"/>
-<part name="D1" library="Seeed-OPL-Diode" deviceset="DIODE*" device="'1N4148-SMD'"/>
+<part name="D1" library="Seeed-OPL-Diode" deviceset="DIODE*" device="'0805'"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M14" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M14" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M06" device="SILK_FEMALE_PTH"/>
