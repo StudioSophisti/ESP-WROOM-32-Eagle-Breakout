@@ -1,5 +1,7 @@
 # ESP-WROOM-32-Eagle-Breakout
-An Eagle Breakout board for Espressif's ESP-WROOM-32
+A breadboard compatible breakout board for Espressif's ESP-WROOM-32, made in Eagle.
+
+The 6 programmer pins at the bottom are compatible with this FTDI Serial USB Cable: https://www.adafruit.com/products/70
 
 ### Partlist
 
