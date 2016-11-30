@@ -1,7 +1,9 @@
 # ESP-WROOM-32-Eagle-Breakout
-A breadboard compatible breakout board for Espressif's ESP-WROOM-32, made in Eagle.
+A breadboard compatible Eagle breakout board for Espressif's ESP32 module ESP-WROOM-32. The ESP32 is a powerful and low-cost Wifi/Bluetooth chip that enables great Internet-Of-Things applications. Studio Sophisti is using this chip in several projects, including a work-in-progress redesign of Ping (http://www.studiosophisti.nl/ping)
 
-The 6 programmer pins at the bottom are compatible with this FTDI Serial USB Cable: https://www.adafruit.com/products/70
+The ESP-WROOM-32 can be purchased directly from Espressif or from a distributor like Adafruit: https://www.adafruit.com/product/3320
+
+6 Programmer pins at the bottom of the board are compatible with this FTDI Serial USB Cable: https://www.adafruit.com/products/70
 
 The board contains reverse-voltage protections, 2 buttons (1 for reset and 1 for activating programming mode), and a diode on the RX line so the IC is 5V serial port compatible.
 
