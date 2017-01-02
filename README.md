@@ -3,9 +3,11 @@ A breadboard compatible Eagle breakout board for Espressif's ESP32 module ESP-WR
 
 The ESP-WROOM-32 can be purchased directly from Espressif or from a distributor like Adafruit: https://www.adafruit.com/product/3320
 
-6 Programmer pins at the bottom of the board are compatible with this FTDI Serial USB Cable: https://www.adafruit.com/products/70
-
 The board contains reverse-voltage protections, 2 buttons (1 for reset and 1 for activating programming mode), and a diode on the RX line so the IC is 5V serial port compatible.
+
+Power it from a 2.2-3.6V power source.
+
+The design has been tested and works.
 
 ### Partlist
 
@@ -14,9 +16,6 @@ The board contains reverse-voltage protections, 2 buttons (1 for reset and 1 for
 - 1 10uF capacitor: Farnell 2494230
 - 1 1N4148 diode: Farnell 1466524
 - 1 2N2007E mosfet: Farnell 1894721
-
-### Warning
-This PCB is currently untested. I will update this repo in a few weeks when I have tested it with a real PCB.
 
 ### PCB Preview
 ![Preview](ESP-WROOM-32-Breakout_Top.png)
