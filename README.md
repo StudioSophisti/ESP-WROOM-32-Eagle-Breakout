@@ -15,7 +15,7 @@ The design has been tested and works.
 - 2 10k resistors: Farnell 2130939
 - 1 10uF capacitor: Farnell 2494230
 - 1 1N4148 diode: Farnell 1466524
-- 1 2N2007E mosfet: Farnell 1894721
+- 1 2N2007E mosfet: Farnell 2317616
 
 ### PCB Preview
 ![Preview](ESP-WROOM-32-Breakout_Top.png)
