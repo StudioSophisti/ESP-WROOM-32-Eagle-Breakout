@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -571,10 +572,10 @@
 <pin name="GND@1" x="-17.78" y="2.54" length="short"/>
 <pin name="3V3" x="-17.78" y="0" length="short"/>
 <pin name="EN" x="-17.78" y="-2.54" length="short"/>
-<pin name="SENSOR_VP" x="-17.78" y="-5.08" length="short"/>
-<pin name="SENSOR_VN" x="-17.78" y="-7.62" length="short"/>
-<pin name="IO34" x="-17.78" y="-10.16" length="short"/>
-<pin name="IO35" x="-17.78" y="-12.7" length="short"/>
+<pin name="SENSOR_VP" x="-17.78" y="-5.08" length="short" direction="in"/>
+<pin name="SENSOR_VN" x="-17.78" y="-7.62" length="short" direction="in"/>
+<pin name="IO34" x="-17.78" y="-10.16" length="short" direction="in"/>
+<pin name="IO35" x="-17.78" y="-12.7" length="short" direction="in"/>
 <pin name="IO32" x="-17.78" y="-15.24" length="short"/>
 <pin name="IO33" x="-17.78" y="-17.78" length="short"/>
 <pin name="IO25" x="-17.78" y="-20.32" length="short"/>
@@ -613,6 +614,8 @@
 <wire x1="27.94" y1="-38.1" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
 <text x="-12.7" y="18.034" size="1.778" layer="95">&gt;Name</text>
 <text x="-12.7" y="12.446" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<text x="-6.985" y="-12.065" size="1.27" layer="94" font="vector" ratio="16">only inputs</text>
+<wire x1="-7.62" y1="-9.525" x2="-7.62" y2="-13.335" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
