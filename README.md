@@ -5,7 +5,7 @@ The ESP-WROOM-32 can be purchased directly from Espressif or from a distributor 
 
 The board contains reverse-voltage protections, 2 buttons (1 for reset and 1 for activating programming mode), and a diode on the RX line so the IC is 5V serial port compatible.
 
-Power it from a 2.2-3.6V power source.
+Power it from a 3.0-3.3V power source.
 
 The design has been tested and works.
 
